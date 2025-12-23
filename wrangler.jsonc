@@ -1,0 +1,20 @@
+/**
+ * For more details on how to configure Wrangler, refer to:
+ * https://developers.cloudflare.com/workers/wrangler/configuration/
+ */
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "qsl-worker",
+	"main": "src/index.ts",
+	"compatibility_date": "2025-12-23",
+	"observability": {
+		"enabled": true
+	},
+	"kv_namespaces": [
+		{
+			"binding": "XML_TEMPLATES",
+			"id": "f1fdcef2a3074998a826883052c27a71",
+			"preview_id": "fb35e0db721c4881a3ecaf420c944e8d"
+		}
+	]
+}
